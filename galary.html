@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+       <link rel="stylesheet" type="text/css" href="about.css">
+       <script type="text/javascript" src=".js"></script>
+       
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/about.css">
+<link rel="stylesheet" type="text/css" href="css/about_gallery.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<title></title>
+<style type="text/css">
+  
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+
+  
+
+
+</script>
+
+</head>
+<body>
+   <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="landing.html">
+     <img src="image/logo_1.jpg" style="height: 50px; width:110px;padding-bottom: 25px;">
+    </a></div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CHARITY <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="foodhome.html">FOOD CHARITY</a></li><hr style="margin-bottom: 0px;margin-top: 0px;">
+            <li><a href="furhome.html">MATERIAL CHARITY</a></li><hr style="margin-bottom: 0px;margin-top: 0px;">
+            <li><a href="eventhome.html">EVENT</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="about.html">ABOUT US <span class=""></span></a>
+        </li>
+        <li><a href="contact.html"><span class="glyphicon glyphicon-user"></span> CONTACT US</a></li>
+        <li><a href="" data-toggle="modal" data-target="#myModallogin"><span class="glyphicon glyphicon-log-in"></span> JOIN</a></li>
+      </ul>
+  </div>
+</div>
+
+</nav>
+
+    <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Charity</h1>
+    </div>
+</div> 
+
+<div class="container">
+<h2 style="text-align:center">Mode Of Charity</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/bowl.jpg" alt="Jane" style="width:100%">
+        <h3 style="text-align: left;"><b>Food Charity</b></h3>
+        <p style="padding-left: 5px;">If anyone is hungry he/she can visit on our website. This website will  always help needy people in their need. We have a mission that no people will sleep hungry. </p>
+      
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="image/fur5.jpg" alt="Mike" style="width:100%">
+         <h3 style="text-align: left;"><b>Material Charity</b></h3>
+        <p style="padding-left: 5px;">We have both donar & reciever on the same plateform .Donar will donate and the reciever will get those things which he has need like-food,book,furniture.    </p>
+
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/event22.jpg".jpg alt="John" style="width:100%">
+         <h3 style="text-align: left;"><b>Event Charity</b></h3>
+        <p style="padding-left: 5px;">We will organize event through this website like-providing guest house for poor family, health checkup, birthday party and many moore events.</p>
+
+          </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid" style=" min-height: 400px;background-color: ;">
+        <div class="row" style="margin: 0px;padding: 0px">
+
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 style="text-align: center;">GALLERY</h1>
+        </div>
+
+        <div align="center">
+            <span class="filter-button" data-filter="all">All/</span>
+            <span class="filter-button" data-filter="hdpe">Food charity/</span>
+            
+            <span class="filter-button" data-filter="spray">material charity/</span>
+              <span class="filter-button" data-filter="irrigation">event charity</span>
+        </div>
+        <br/>
+
+              
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+               <div class="button1" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color: black;"> 
+               <p>Name : Daal <br>Tasty and delecious</p>
+                
+      </div></div>
+  </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+
+            <div class="button2" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 90px;color: black;"> 
+               <p>Name : Chair <br>solid condition</p>
+                
+      </div></div>
+           
+                 </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+               <div class="button3" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color:black;"> 
+               <p>Name : Banana <br>fresh</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+             <div class="button4" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 90px;color: black;"> 
+               <p> Birthday celebrations</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+               <div class="button5" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color: black;"> 
+               <p>Name : Box <br>solid condition</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+               <div class="button6" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 85px;color: black;"> 
+               <p> Marriage celebrations</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+              <div class="button7" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color: black;"> 
+               <p>Name : Sofa <br>solid condition</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+               <div class="button8" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 85px;color: black;"> 
+               <p> Birthday celebrations</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+              <div class="button9" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 85px;color: black;"> 
+               <p> Donate food </p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+           <div class="button10" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color: black;"> 
+               <p>Name : Rice <br>fresh</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+             <div class="button11" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color: black;"> 
+               <p>Name : Chair <br>solid condition</p>
+                
+      </div></div>
+
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <div class="button12" style="border: 2px solid #000;"> 
+                <div class="button" style="text-align: center;padding: 75px;color: black;"> 
+               <p>Name : Sewing machine <br>solid condition</p>
+                
+      </div></div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+  <div class="container-fluid">
+  
+    <div class="row" style="padding: 20px;">
+      <div class="col-lg-4 col-sm-6" style="height: 300px;">
+        <div class="box">
+          <h2>Charity Name</h2>
+           <div class="address">
+            <a href="foodhome.html">
+              
+              Food charity
+            </a>
+              <a href="furhome.html">
+              
+              Material charity
+            </a>
+            <a href="eventhome.html">
+              
+              Event charity
+            </a>
+                <a href="about.html">
+              
+              About charity
+            </a>    
+          </div>
+           <div class="social">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+           </div>
+        </div>
+      </div>
+   
+        
+      
+      <div class="col-lg-4 col-sm-6"  style="height: 300px;">
+          <div class="box">
+          <h2>Video</h2>
+          <video width="400" controls>
+             <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+           </video>
+        </div>
+      </div>
+
+      
+    
+      <div class="col-lg-4 col-sm-6"  style="height: 300px;">
+        <div class="box">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="mail" style="color: white;">Email<span>*</span></label>
+            <input type="mail" name="mail" id="mail" class="inp" 
+             required>
+             <label for="mess" style="color: white;">Message<span>*</span></label>
+             <textarea name="mess" id="mess" rows="3" class="text" required></textarea>
+             <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+        </div>
+        </div>
+</footer>
+ <div class="container-fluid"> 
+  <div class="row" style="background-color: black ;color: lightgray;padding: 20px;">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-4">Copyright_All_Rights_Reserved</div>
+  <div class="col-lg-4"> </div>
+</div>      
+  </div>
+  </body>
+  </html>
